@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+body {
+    background-color: rgb(44, 179, 179);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contenedor {
+    position: absolute;
+    left: 25%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.frag {
+    /*background-color: aqua;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("hojita.png");
+    background-size: 50vw 100vh;
+    width: 50vw;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inicio {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-top: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+    text-align: left;
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 2vh;
+    width: 33vw;
+    font-size: 1.9vw;
+}
+
+.cambio {
+    margin-left: 1vw;
+    font-family: 'Quicksand', sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    transition: all 2s;
+    font-size: 1.4vw;
+}
+
+.cambio:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
+
+.eliminar {
+    margin-left: 1vw;
+    font-family: 'Quicksand', sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    transition: all 2s;
+    font-size: 1.4vw;
+}
+
+.eliminar:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
+
+.button-an {
+    margin-right: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3vw;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 2s;
+}
+
+.button-an:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
+
+.button-el {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3vw;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 2s;
+}
+
+.button-el:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+}
+
+.text-es {
+    width: 20vw;
+    height: 5vh;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 2px solid purple;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5vw;
+}
+
+.check {
+    width: 2vw;
+    height: 2vh;
 }
